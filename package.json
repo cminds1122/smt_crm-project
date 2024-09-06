@@ -2,7 +2,7 @@
   "name": "cms",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://cminds1122.github.io",
+  "homepage": "https://cminds1122.github.io/smt_crm-project",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.5",
     "@testing-library/jest-dom": "^5.17.0",
