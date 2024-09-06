@@ -32,7 +32,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.PAT_TOKEN }}
           publish_dir: ./build
         # This action deploys the contents of the build directory to GitHub Pages
         # The GITHUB_TOKEN is automatically provided by GitHub Actions for authentication
