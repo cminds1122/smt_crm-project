@@ -1,0 +1,63 @@
+@import '../../styles/index';
+
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__small {
+        width: 25%;
+    }
+
+    &__large {
+        width: 100%;
+    }
+
+    &__mediam {
+        width: 35%;
+    }
+
+    &__primery {
+        background-color: $primery-color;
+        color: $app-white;
+        border: 1px solid $app-white;
+        margin: 10px;
+        height: 40px;
+        font-weight: 600;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: $app-white;
+            color: $primery-color;
+            border-color: $primery-color;
+        }
+
+        &:disabled {
+            border-color: rgba($color: $primery-color, $alpha: 0.5);
+            background-color: rgba($color: $primery-color, $alpha: 0.6);
+            color: rgba($color: $app-white, $alpha: 0.6);
+        }
+    }
+
+    &__secondary {
+        background-color: $app-white;
+        color: $primery-color;
+        border: 1px solid $primery-color;
+        margin: 10px;
+        height: 40px;
+        font-weight: 600;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: $primery-color;
+            color: $app-white;
+            border-color: $app-white;
+        }
+
+        &:disabled {
+            border-color: rgba($color: $primery-color, $alpha: 0.5);
+            background-color: rgba($color: $app-gray, $alpha: 1);
+            color: rgba($color: $primery-color, $alpha: 0.6);
+        }
+    }
+}

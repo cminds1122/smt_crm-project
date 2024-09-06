@@ -1,0 +1,104 @@
+.sidebar {
+    &__container {
+        height: calc(100vh - 80px);
+        overflow-y: auto;
+        // overflow-x: hidden;
+        background-color: #f8f9fa;
+    }
+ 
+    &__wraper {
+        width: 230px;
+
+        ul {
+            padding-left: 0px;
+            text-align: center;
+        }
+   
+        ul button:hover {
+            background-color: #473b47 !important;
+            color: #ffff !important;
+            border-radius: 5px !important;
+        
+        }
+        
+        .sub-list:hover {
+            background-color: #32012F !important;
+            color: #ffff !important;
+            border-radius: 5px !important;
+        }
+        
+        .accordion-button:not(.collapsed) {
+            color: #ffff !important;
+            background-color: #32012F !important;
+            box-shadow: 0 0 #fff !important;
+            border-radius: 5px !important;
+        }
+        
+        .sidebar.accordion-button::after {
+            background-image: none;
+        }
+        
+        .sidebar.accordion-button:hover:after {
+            background-image: none;
+        }
+        
+        .list-group-item {
+            border: none !important;
+            cursor: pointer;
+        
+        }
+        
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+        
+        .accordion-item {
+            border: none !important;
+        }
+        
+        .react-icon {
+            font-size: 20px;
+            margin-right: 8px;
+        }
+        
+        .accordion-button:not(.collapsed)::after {
+            background-image: url(../../assets/sidebar/down-arrow-100.png);
+        }
+        
+        .accordion-button:hover::after {
+            background-image: url(../../assets/sidebar/down-arrow-100.png);
+        }
+        
+        .accordion-body {
+            padding-right: 0px !important;
+            padding-top: 0.5rem !important;
+            padding-bottom: 0.5rem !important;
+            padding-left: 10px !important;
+        
+        }
+        
+        .accordion-button {
+            padding-top: 0.5rem !important;
+            padding-bottom: 0.5rem !important;
+        
+        }
+        
+        .content.list-group-item {
+            padding-top: 0.4rem !important;
+            padding-bottom: 0.4rem !important;
+        }
+        .accordion-item, li, button {
+            background: transparent !important;
+            background-color: transparent !important;
+
+            .active {
+                background:#473b47 !important ;
+                background-color: #473b47 !important;
+                color: #ffff !important;
+                border-radius: 5px !important;
+            }
+        }
+       
+    }
+}
+

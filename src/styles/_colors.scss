@@ -1,0 +1,37 @@
+
+:root {
+    --app-header-background-color: linear-gradient(54deg, rgba(74, 76, 179, .95) 34%, hsla(0, 34%, 71%, .95));
+    --app-header-sticky-background-color: #FFFFFF;
+    --app-header-sticky-text-color: #000000;
+    --app-header-text-color:#FFFFFF;
+    --app-info-background-color: linear-gradient(54deg, rgba(74, 76, 179, .95) 34%, hsla(0, 34%, 71%, .95));
+    --app-info-primery-color: #FFFFFF;
+    --app-info-secondry-color: rgba(color:#FFFFFF, alpha:0.5);
+    --app-info-social-icon-color: #FFFFFF;
+    --app-button-color: #6d56c1;
+    --app-timeline-heading-color: #6d56c1;
+    --app-card-bg-color:linear-gradient(to bottom, #ccffcc 31%, #00ccff 90%);
+    --app-progress-bar-color: #0075ff;
+    --app-primery-text-color: #999999;
+    --app-primery-bg-color: #FFFFFF;
+    --app-secondary-bg-color: linear-gradient(54deg, rgba(74, 76, 179, .95) 34%, hsla(0, 34%, 71%, .95));
+
+
+    --app-text-white-color:#FFFFFF;
+    --app-text-grey-color:#999999;
+    --app-text-black-color:#000000cc;
+    
+  }
+
+$app-primery-color: linear-gradient(54deg, rgba(74, 76, 179, .95) 34%, hsla(0, 34%, 71%, .95));
+
+$app-black: #000000;
+$app-header-shadow: 0 5px 8px 0 rgba(0, 0, 0, .14);
+$app-border-color:  #dee2e6;
+$app-alert-color: red;
+
+
+// New Color 
+$primery-color: #32012F;
+$app-white: #FFFFFF;
+$app-gray:#dee2e6;

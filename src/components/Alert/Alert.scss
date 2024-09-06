@@ -1,0 +1,30 @@
+.alert-danger {
+    background-color: #f8d7da;
+    color: #000;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #000;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #000;
+}
+
+.btn-close {
+    box-shadow: 0 0 #fff !important;
+}
+
+.alert .alert-dismissible {
+    padding-left: 0.5rem !important;
+}
+
+.progress-close {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 4px;
+    width: 100%;
+}

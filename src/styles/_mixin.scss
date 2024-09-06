@@ -1,0 +1,19 @@
+@mixin column {
+    display: flex;
+    flex-direction: column;
+}
+@mixin mobile {
+    @media only screen and (min-width: 375px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media only screen and (min-width: 1280px) {
+        @content;
+    }
+}

@@ -1,0 +1,124 @@
+@import './mixin';
+// .container {
+//     max-width: 1320px;
+//     padding-right: 15px;
+//     padding-left: 15px;
+//     margin-right: auto;
+//     margin-left: auto;
+//   }
+
+  .app-column {
+    @include column;
+  }
+  .mt-20 {
+    margin-top: 20px;
+  }
+  .pr-10 {
+    padding-right: 10px;
+  }
+  // .app-p-16 {
+  //   font-size: 16px;
+  //   color: white;
+  //   padding-bottom: 10px;
+  // }
+  .app-btn {
+    background-color: #6d56c1;
+    min-height: 50px;
+    border-radius: 25px;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding: 15px;
+    min-width: 170px;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    font-weight: 600;
+    overflow: hidden;
+    border-style: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .floating-form {
+    // width: 320px;
+    // @include desktop {
+    //     width: 620px; 
+    // }
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.floating-label {
+    position: relative;
+    margin-bottom: 50px;
+    background: $app-white;
+
+    width: calc(50% - 10px);
+}
+.floating-input,
+.floating-select {
+    font-size: 14px;
+    padding: 4px 4px;
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    // border-bottom: 1px solid rgba($color: $app-black, $alpha: 0.5);
+    border-bottom: 1px solid $app-border-color;
+}
+
+.floating-input:focus,
+.floating-select:focus {
+    outline: none;
+    border-bottom: 1px solid rgba($color: $app-black, $alpha: 0.5);
+}
+
+label {
+    // color: rgba($color: $app-black, $alpha: 0.5);
+    // font-size: 14px;
+    // font-weight: normal;
+    // position: absolute;
+    // pointer-events: none;
+    // left: 5px;
+    // top: 5px;
+    // transition: 0.2s ease all;
+    // -moz-transition: 0.2s ease all;
+    // -webkit-transition: 0.2s ease all;
+}
+
+.floating-input:focus ~ label,
+.floating-input:not(:placeholder-shown) ~ label {
+    top: -18px;
+    font-size: 16px;
+    color: $app-black;
+}
+
+.highlight {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 15%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.error {
+    color: $app-alert-color;
+    font-size: 15px;
+    margin-top: 5px;
+}
+button[disabled]{
+  cursor: not-allowed;
+pointer-events: all !important;
+color: rgba($color: white, $alpha: 0.4) ;
+}
+
+.btn {
+  width: 350px;
+}

@@ -1,0 +1,51 @@
+.registration {
+  &__container {
+    background-color: rgb(255, 255, 255);
+    height: calc(100vh - 80px);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__wrapper {
+    background-color: rgb(255, 255, 255);
+    height: 450px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 10px rgba(208, 207, 207, 0.7);
+  }
+  &__usr--icon {
+    height: 20px;
+    width: 20px;
+    }
+    &__invalid {
+      border-color: red !important;
+    }
+    &__email--credentials {
+      margin-top: -5px;
+      font-weight: 450;
+    }
+    &__otp-input {
+      width: 50px !important;
+      height: 50px;
+      font-size: 24px !important;
+      border-radius: 5px;
+      margin: 0 5px;
+      border-radius: 5px;
+       border: solid 1px #c5c5c5;
+      text-align: center;
+    }
+    &__otp-button{
+      width: 70%;
+    }
+  }
+  
+  .form-control:focus {
+    box-shadow: none !important;
+  
+}
+
+

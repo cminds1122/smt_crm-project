@@ -1,0 +1,77 @@
+.header {
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    background-color: white;
+    border-bottom: 1px solid black;
+    background: #32012F;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    
+    &__button{
+        background-color: #32012F;
+        outline: none;
+        border-color: white;
+        color: white;
+        padding: 5px;
+        font-size: larger;
+        width: auto;
+        
+        margin-top: 1.3%;
+        border-radius: 5px;
+        
+    }
+    &__button:hover {
+        background: white !important;
+        color: black !important;
+      }
+ }
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+    // gap: 15px;
+    align-items: center;
+}
+.headerLink{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    padding: 10px;
+}
+
+.headerLink:hover{
+    color: black;
+}
+
+.buttonContainer{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.loginImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu{
+    z-index: 20px;
+}
+
+.app--title {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 15px;
+}
+// .sidebar--controller {
+//     color: #ffff;
+//     font-size: 40px;
+//     display: flex;
+//     cursor: pointer;
+// }
