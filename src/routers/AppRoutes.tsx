@@ -8,7 +8,6 @@ import OtpValidation from '../components/Otp/OtpValidation';
 import ForgetPassword from '../components/ForgetPassword/ForgetPassword';
 import ChangePassword from '../components/ChangePassword/ChangePassword';
 import Layout from '../components/Layout/Layout';
-import Dashboard from '../components/Dashboard/Dashboard';
 import ListView from '../components/ListView/ListView';
 
 interface Props {

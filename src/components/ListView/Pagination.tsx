@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Pagination.scss";
 
 interface PaginationProps {
@@ -13,6 +13,13 @@ const Pagination: React.FC<PaginationProps> = ({
   onPageChange,
 }) => {
   const [pageNumbers, setPageNumbers] = useState<number[]>([]);
+
+  /* eslint-disable react-hooks/exhaustive-deps */
+  useEffect(() => {
+    generatePageNumbers();
+  }, [currentPage, totalPages]);
+  /* eslint-enable react-hooks/exhaustive-deps */
+
 
   const generatePageNumbers = () => {
     let pages = [];
@@ -66,9 +73,7 @@ const Pagination: React.FC<PaginationProps> = ({
     }
   };
 
-  React.useEffect(() => {
-    generatePageNumbers();
-  }, [currentPage, totalPages]);
+
 
   return (
     <div className="pagination">
